@@ -23,7 +23,7 @@
 	#delete:hover{
 		background-color: #ff4d4d
 	}
-		#submit:active{
+	#submit:active{
 		background-color: #66ff66;
 		box-shadow: 0 5px #666;
 		transform: translateY(4px);
@@ -81,12 +81,12 @@
 		resize: vertical;
 		
 	 }
-	 label{
+	label{
 		margin:10px;
 		font-family: EDfont;
 		
 	 }
-	 div{
+	div{
 		position:relative;
 		margin: 100 px 50px 100px;
 		background-color: white;
@@ -95,7 +95,9 @@
 		text-align:center;
 	}
 	 
-	 
+	 #formtext{
+		 border-radius:10px;
+	 }
 	#Opcions{
 	border-radius:10px 10px 0px 0px;
 	}

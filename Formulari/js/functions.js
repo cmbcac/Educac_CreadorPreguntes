@@ -1,5 +1,8 @@
 function showrespostes(tipus) {
-  
+			
+			var op1= document.getElementById("resposta1");
+			var op2= document.getElementById("resposta2");
+			var op3= document.getElementById("resposta3");
 			var op4= document.getElementById("resposta4");
 			var op5= document.getElementById("resposta5");
 			var lab4=document.getElementById("DragOp");
@@ -30,6 +33,11 @@ function showrespostes(tipus) {
 					 op5.setAttribute('style', 'display:inline')
 					 lab4.setAttribute('style', 'display:none')
 					 lab5.setAttribute('style', 'display:none')
+					 op1.required=true;
+					 op2.required=true;
+					 op3.required=true;
+					 op4.required=true;
+					 op5.required=true;
 
 					 
 				} 
@@ -65,11 +73,25 @@ function showrespostes(tipus) {
 					lab5.setAttribute('style', 'display:none')
 				
 				} 
-				
-				
+
 			}
 		
 	}
+	
+function Text_o_foto(opcio){
+	
+	 let selectedValue = opcio.options[opcio.selectedIndex].value;
+	 
+	if(selectedValue=="text"){
+		document.getElementById("formtext").setAttribute('style', 'display:inline')
+		document.getElementById("triatxtfot").setAttribute('style', 'display:none')
+	}else if(selectedValue=="foto"){
+		document.getElementById("formfot").setAttribute('style', 'display:inline')
+		
+		document.getElementById("triatxtfot").setAttribute('style', 'display:none')
+	}
+}
+	
   function openWin(value) {
     window.open(value);
  }

@@ -18,8 +18,15 @@
 	</div>
 	<div class="formcontainer">
     <form id='foo'>
-     
-	
+     <p id="triatxtfot">
+		<label>Quin estil de pregunta vols fer?</label>
+		<select name="fototext" type="fototext" onchange="Text_o_foto(this)">
+				<option value="" selected="selected"></option>
+				<option value="foto">Foto</option>
+				<option value="text">Text</option>
+			</select> 
+	 </p>
+	 <div id="formtext" style="display:none">
 	 <p>
         <label>Tipus de pregunta</label>
 			<select name="tipus" type="tipus" onchange="showrespostes(this)">
@@ -32,10 +39,9 @@
 				<option value="Ordenar">Ordenar</option>
 			</select> 
       </p>
-	 
 	 <p>
         <label>Enunciat</label>
-        <input id='enunciat' name='enunciat' type='enunciat'>
+        <input id='enunciat' name='enunciat' type='enunciat' required>
       </p>
 	  
 	 <div class="subform" id="Opcions" style= "display:none" >
@@ -68,6 +74,7 @@
 	
 	  <label>URL: </label>
 	 <input type="url" name="url" id="url"></input>
+	 <input type="file" name="file" accept="image/*">
 		
 	 </div>
 	 <div class="subform" id="Categories"style= "display:none">
@@ -94,16 +101,25 @@
 		</p>
 	 
 	 </div>
-	 <div class="subform" id="End" style= "display:none">
+	 <div class="subform" id="End">
 		<p>
 		<label>En cas de que creguis que hi ha una resposta correcta:</label>
-		<input id='respostacorr' name='respostacorr' type='respostacorr'>
+		<input id='corr' name='corr' type='corr'>
 		</p>
 		
 		<div id='success'></div>
 		<button class="button" type="reset" id="delete" style="margin-right:100px">Esborrar</button>
         <button class="button" type='submit' id="submit">Enviar</button>
 	 </div>
+	</div>
+	 <div id="formfot" style="display:none">
+		<input type="file" name="file" accept="image/*">
+		 
+		<div id='success'></div>
+		<button class="button" type="reset" id="delete" style="margin-right:100px">Esborrar</button>
+        <button class="button" type='submit' id="submit">Enviar</button>
+	
+	</div>
 	
 	</form>
 	</div>
