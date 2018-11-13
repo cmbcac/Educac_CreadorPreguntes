@@ -22,6 +22,11 @@ function showrespostes(tipus) {
 					 op5.setAttribute('style', 'display:none')
 					 lab4.setAttribute('style', 'display:inline')
 					 lab5.setAttribute('style', 'display:inline')
+					  op1.required=true;
+					  op2.required=true;
+					  op3.required=true;
+					  op4.required=false;
+					  op5.required=false;
 					 
 				}
 				else if(selectedValue=="Drag-categories"||selectedValue=="Relació"){
@@ -47,7 +52,11 @@ function showrespostes(tipus) {
 					subForms[2].setAttribute('style', 'display:none')
 					subForms[3].setAttribute('style', 'display:inline')
 					cat1.required=false;
-					op1.required=false;
+					 op1.required=false;
+					 op2.required=false;
+					 op3.required=false;
+					 op4.required=false;
+					 op5.required=false;
 
 				}
 				else if(selectedValue=="Opció múltiple"||selectedValue=="Ordenar"){
@@ -76,21 +85,7 @@ function showrespostes(tipus) {
 
 			}
 		
-	}
-	
-function Text_o_foto(opcio){
-	
-	 let selectedValue = opcio.options[opcio.selectedIndex].value;
-	 
-	if(selectedValue=="text"){
-		document.getElementById("formtext").setAttribute('style', 'display:inline')
-		document.getElementById("triatxtfot").setAttribute('style', 'display:none')
-	}else if(selectedValue=="foto"){
-		document.getElementById("formfot").setAttribute('style', 'display:inline')
-		
-		document.getElementById("triatxtfot").setAttribute('style', 'display:none')
-	}
-}
+	}	
 	
 function openWin(value) {
     window.open(value);

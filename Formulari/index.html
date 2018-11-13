@@ -20,13 +20,9 @@
     <form id='foo'>
      <p id="triatxtfot">
 		<label>Quin estil de pregunta vols fer?</label>
-		<select name="head" type="fototext" onchange="Text_o_foto(this)">
-				<option value="" selected="selected"></option>
-				<option value="foto">Foto</option>
-				<option value="text">Text</option>
-			</select> 
+		
 	 </p>
-	 <div id="formtext" style="display:none">
+	 <div id="formtext">
 	 <p>
         <label>Tipus de pregunta</label>
 			<select name="tipus" type="tipus" onchange="showrespostes(this)">
@@ -111,15 +107,7 @@
         <button class="button" type='submit' id="submit">Enviar</button>
 	 </div>
 	</div>
-	 <div id="formfot" style="display:none">
-		<input type="file" name="file" accept="image/*">
-		 
-		<div id='success'></div>
-		<button class="button" type="reset" id="delete" style="margin-right:100px">Esborrar</button>
-        <button class="button" type='submit' id="submit">Enviar</button>
-	
-	</div>
-	
+
 	</form>
 	</div>
 </body>	
