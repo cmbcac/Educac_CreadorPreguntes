@@ -19,7 +19,7 @@
 			<input type="text" id="url"></input>
 	 </p>
      <p id="triatxtfot">
-		<label>¿Que pregunta quieres hacer?</label>
+		<label>¿Quieres que contenga fotos?</label>
 			<select name="disseny" type="disseny" id="disseny" onchange="showtform(this)">
 				<option value="" selected="selected"></option>
 				<option value="Fotos">Con fotos</option>
@@ -49,10 +49,11 @@
         <input id='puntatje' name='puntatje' type='puntatje' required>
       </p> 
 	 <div class="subform" id="Opcions" style= "display:none" >
-	 <label id="infoFoto"> Recuerda que todos los elementos son imagenes <br>
-	  Y por lo tanto los elementos tienen que ser URL <br>
-	  Si no es una foto, escribe N delante del elemento <br>
-	  para que sea leido como NO FOTO</label>
+	 <p id="infoFoto" style="text-align: justify"> 
+	  Recuerda que no todos los elementos tienen que 
+	  ser imagenes, y por lo tanto los elementos de foto tienen que 
+	  ser URL. Si no es una foto, escribe N <br>
+	  delante del elemento para que sea leido como "NO FOTO"</p>
 	  <p>
         <label>Opcion para el usuario Nº1</label>
         <input id='resposta1' name='resposta1' type='resposta1' required>
