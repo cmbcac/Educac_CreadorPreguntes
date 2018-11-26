@@ -2,7 +2,20 @@
 		font-family: "EDfont";
 		src: url('Capsuula.ttf');
 	}
+	#title{
+		
+	position: absolute;
+	top:0%;
+	width: 100vw;
+	height: 5vh;
+	padding:20px;
+	text-align:center;
+	line-height:5vh;
+	background-color: black;
+	color:yellow;
+	font-family: "Arial Black", Gadget, sans-serif;
 	
+	}
 	.button {
 		
 		font-size: 20px;
@@ -65,7 +78,7 @@
 	background-image: url("img/bg.png");
 	background-position:center;
 	position:absolute;
-	top: calc(5vh);
+	top: calc(10vh);
 	left: calc(35vw);
 	background-color:white;
 	padding: 50px 15px 30px;
@@ -87,14 +100,12 @@
 	 }
 	div{
 		position:relative;
-		margin: 100 px 50px 100px;
 		background-color: white;
 		float:left;
 		width: 500px;
 		text-align:center;
 	}
-	 
-	 #formtext{
+	#formtext{
 		 border-radius:10px;
 	 }
 	#Opcions{
@@ -102,7 +113,7 @@
 	}
 	#End{
 	border-radius:0px 0px 10px 10px;
-	padding: 10px 0px 20px;
+	padding: 10px 0px 10px;
 	}
 	#Filtre{
 	border-radius:10px 10px 0px 0px;

@@ -8,15 +8,16 @@
 	<link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16"/>
 	<link rel="stylesheet" href="styles.css">
 	<title>Formularios Educac</title>
+	
 </head>
 
  <body>
-
+	<div id="title">Creador de preguntas para formularios</div>
 	<div class="formcontainer">
     <form id='foo'>
 	 <p id="sschoice">
 		<label>¿A que spreadsheet quieres subirlo?</label>
-			<input type="text" id="url"></input>
+			<input type="text" id="url" placeholder="URL: (https://script.google...)"></input>
 	 </p>
      <p id="triatxtfot">
 		<label>¿Quieres que contenga fotos?</label>
@@ -42,76 +43,75 @@
   
 	 <p>
         <label>Enunciado</label>
-        <input id='enunciat' name='enunciat' type='enunciat' required>
+        <input id='enunciat' name='enunciat' type='enunciat' placeholder="Inserte enunciado aqui..." required>
       </p>
 	 <p>
         <label>Valor de la pregunta: </label>
-        <input id='puntatje' name='puntatje' type='puntatje' required>
+        <input id='puntatje' name='puntatje' type='puntatje'  placeholder="Inserte valor numerico aqui..." required>
       </p> 
 	 <div class="subform" id="Opcions" style= "display:none" >
-	 <p id="infoFoto" style="text-align: justify"> 
-	  Recuerda que no todos los elementos tienen que 
-	  ser imagenes, y por lo tanto los elementos de foto tienen que 
+	 <p id="infoFoto" style="font-weight:500"> 
+	  Los elementos de foto tienen que 
 	  ser URL. Si no es una foto, escribe N <br>
 	  delante del elemento para que sea leido como "NO FOTO"</p>
 	  <p>
         <label>Opcion para el usuario Nº1</label>
-        <input id='resposta1' name='resposta1' type='resposta1' required>
+        <input id='resposta1' name='resposta1' type='resposta1' placeholder="Inserte respuesta aqui..." required>
       </p>
 	  <p>
         <label>Opcion para el usuario Nº2</label>
-        <input id='resposta2' name='resposta2' type='resposta2'>
+        <input id='resposta2' name='resposta2' type='resposta2'  placeholder="Inserte respuesta aqui...">
       </p>
 	  <p>
         <label>Opcion para el usuario Nº3</label>
-        <input id='resposta3' name='resposta3' type='resposta3'>
+        <input id='resposta3' name='resposta3' type='resposta3'  placeholder="Inserte respuesta aqui...">
       </p>
 	 
 	  <p>
         <label>Opcion para el usuario Nº4</label>
-        <input id='resposta4' name='resposta4' type='resposta4' style= "display:none">
+        <input id='resposta4' name='resposta4' type='resposta4' style= "display:none"  placeholder="Inserte respuesta aqui...">
 		<label id="DragOp">No disponible en swipe</label>
       </p>
 	  <p>
         <label>Opcion para el usuario Nº5</label>
-        <input id='resposta5' name='resposta5' type='resposta5' style= "display:none">
+        <input id='resposta5' name='resposta5' type='resposta5' style= "display:none"  placeholder="Inserte respuesta aqui...">
 		<label id="DragOp2">No disponible en swipe</label>
       </p>
 	 </div>
 	 <div class="subform" id="Filtre"style= "display:none">
 	
 	  <label>URL de la imagen: </label>
-	 <input type="url" name="url" id="url"></input>
+	 <input type="url" name="url" id="url"  placeholder="Inserte URL aqui..."></input>
 		
 	 </div>
 	 <div class="subform" id="Categories"style= "display:none">
 		
 		<p>
         <label>Categoria a relacionar Nº1</label>
-        <input id='cat1' name='cat1' type='cat1'required>
+        <input id='cat1' name='cat1' type='cat1'  placeholder="Inserte categoria aqui..." required>
 		</p>
 		<p>
         <label>Categoria a relacionar Nº2</label>
-        <input id='cat2' name='cat2' type='cat2'>
+        <input id='cat2' name='cat2' type='cat2'  placeholder="Inserte categoria aqui...">
 		</p>
 		<p>
         <label>Categoria a relacionar Nº3</label>
-        <input id='cat3' name='cat3' type='cat3'>
+        <input id='cat3' name='cat3' type='cat3' placeholder="Inserte categoria aqui...">
 		</p>
 		<p>
         <label>Categoria a relacionar Nº4</label>
-        <input id='cat4' name='cat4' type='cat4'>
+        <input id='cat4' name='cat4' type='cat4' placeholder="Inserte categoria aqui...">
 		</p>
 		<p>
         <label>Categoria a relacionar Nº5</label>
-        <input id='cat5' name='cat5' type='cat5'>
+        <input id='cat5' name='cat5' type='cat5' placeholder="Inserte categoria aqui...">
 		</p>
 	 
 	 </div>
 	 <div class="subform" id="End">
 		<p>
 		<label>Respuesta correcta:</label>
-		<input id='corr' name='corr' type='corr'>
+		<input id='corr' name='corr' type='corr' placeholder="Inserte respuesta correcta aqui...">
 		</p>
 		
 		<div id='success'></div>
