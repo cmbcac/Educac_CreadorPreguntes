@@ -1,5 +1,7 @@
 function showrespostes(tipus) {
 			
+			//Variables
+			{
 			var op1= document.getElementById("resposta1");
 			var op2= document.getElementById("resposta2");
 			var op3= document.getElementById("resposta3");
@@ -9,6 +11,7 @@ function showrespostes(tipus) {
 			var lab5=document.getElementById("DragOp2");
 			var cat1=document.getElementById("cat1");
 			var op1=document.getElementById("resposta1");
+			}
 			
 		 let selectedValue = tipus.options[tipus.selectedIndex].value;
 		 let subForms = document.getElementsByClassName('subform')
@@ -43,8 +46,7 @@ function showrespostes(tipus) {
 					 op3.required=true;
 					 op4.required=true;
 					 op5.required=true;
-
-					 
+ 					 
 				} 
 				else if(selectedValue=="Filtre"){
 					subForms[0].setAttribute('style', 'display:none')
@@ -57,8 +59,7 @@ function showrespostes(tipus) {
 					 op3.required=false;
 					 op4.required=false;
 					 op5.required=false;
-
-				}
+ 				}
 				else if(selectedValue=="Opció múltiple"||selectedValue=="Ordenar"){
 					 subForms[0].setAttribute('style', 'display:inline')
 					 subForms[1].setAttribute('style', 'display:none')
@@ -69,8 +70,7 @@ function showrespostes(tipus) {
 					 lab4.setAttribute('style', 'display:none')
 					 lab5.setAttribute('style', 'display:none')
 					 cat1.required=false;
-
-				}
+ 				}
 				else {
 					subForms[0].setAttribute('style', 'display:none')
 					subForms[1].setAttribute('style', 'display:none')
@@ -82,10 +82,21 @@ function showrespostes(tipus) {
 					lab5.setAttribute('style', 'display:none')
 				
 				} 
-
-			}
+ 			}
 		
 	}	
+ function showtform(tipus){
+ 	 let selectedValue = tipus.options[tipus.selectedIndex].value;
+	 if(selectedValue == "Fotos"){
+	 
+		document.getElementById("infoFoto").setAttribute("style","display:inline");
+	 
+	 }else{
+	 
+		document.getElementById("infoFoto").setAttribute("style","display:none");
+	 
+	 }
+ }
 	
 function openWin(value) {
     window.open(value);
@@ -111,4 +122,4 @@ function loadImageFileAsURL(){
  
         fileReader.readAsDataURL(fileToLoad);
     }
-}
+} 

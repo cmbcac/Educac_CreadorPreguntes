@@ -7,72 +7,80 @@
     <meta content='width=device-width, initial-scale=1' name='viewport'>
 	<link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16"/>
 	<link rel="stylesheet" href="styles.css">
-	<title>Formularis Educac</title>
+	<title>Formularios Educac</title>
 </head>
 
  <body>
-	<div class="btn-group" id="btongrup">
-		<button onclick=openWin(value) value='index.html'><b>Crea Pregunta</b></button>
-		<button onclick=openWin(value) value='C:/Users/jsintes/Desktop/GrupEducac/Educac/www/cuestionario.html'><b>Questionari</b></button>
-		<button onclick=openWin(value) value='https://docs.google.com/spreadsheets/d/1nLZVoUA49YiSmf0ylFuOaTtB1V57yRrbDQO7pvr1TDs/edit#gid=0'><b>Excel</b></button>
-	</div>
+
 	<div class="formcontainer">
     <form id='foo'>
+	 <p id="sschoice">
+		<label>¿A que spreadsheet quieres subirlo?</label>
+			<input type="text" id="url"></input>
+	 </p>
      <p id="triatxtfot">
-		<label>Quin estil de pregunta vols fer?</label>
-		
+		<label>¿Quieres que contenga fotos?</label>
+			<select name="disseny" type="disseny" id="disseny" onchange="showtform(this)">
+				<option value="" selected="selected"></option>
+				<option value="Fotos">Con fotos</option>
+				<option value="Text">Solo texto</option>
+				
+			</select> 
 	 </p>
 	 <div id="formtext">
-	 <p>
-        <label>Tipus de pregunta</label>
+	 
+        <label>Tipo de pregunta</label>
 			<select name="tipus" type="tipus" onchange="showrespostes(this)">
 				<option value="" selected="selected"></option>
 				<option value="Swipe">Swipe</option>
 				<option value="Drag-categories">Drag</option>
-				<option value="Relació">Relació</option>
-				<option value="Filtre">Filtre</option>
-				<option value="Opció múltiple">Opció múltiple</option>
+				<option value="Relació">Relacion</option>
+				<option value="Filtre">Filtro</option>
+				<option value="Opció múltiple">Opcion multiple</option>
 				<option value="Ordenar">Ordenar</option>
 			</select> 
-      </p>
+  
 	 <p>
-        <label>Enunciat</label>
+        <label>Enunciado</label>
         <input id='enunciat' name='enunciat' type='enunciat' required>
       </p>
-	  <p>
-        <label>Puntuació de la pregunta: </label>
+	 <p>
+        <label>Valor de la pregunta: </label>
         <input id='puntatje' name='puntatje' type='puntatje' required>
-      </p>
-	  
+      </p> 
 	 <div class="subform" id="Opcions" style= "display:none" >
-	  
+	 <p id="infoFoto" style="text-align: justify"> 
+	  Recuerda que no todos los elementos tienen que 
+	  ser imagenes, y por lo tanto los elementos de foto tienen que 
+	  ser URL. Si no es una foto, escribe N <br>
+	  delante del elemento para que sea leido como "NO FOTO"</p>
 	  <p>
-        <label>Opció per a l'usuari Nº1</label>
+        <label>Opcion para el usuario Nº1</label>
         <input id='resposta1' name='resposta1' type='resposta1' required>
       </p>
 	  <p>
-        <label>Opció per a l'usuari Nº2</label>
+        <label>Opcion para el usuario Nº2</label>
         <input id='resposta2' name='resposta2' type='resposta2'>
       </p>
 	  <p>
-        <label>Opció per a l'usuari Nº3</label>
+        <label>Opcion para el usuario Nº3</label>
         <input id='resposta3' name='resposta3' type='resposta3'>
       </p>
 	 
 	  <p>
-        <label>Opció per a l'usuari Nº4</label>
+        <label>Opcion para el usuario Nº4</label>
         <input id='resposta4' name='resposta4' type='resposta4' style= "display:none">
 		<label id="DragOp">No disponible en swipe</label>
       </p>
 	  <p>
-        <label>Opció per a l'usuari Nº5</label>
+        <label>Opcion para el usuario Nº5</label>
         <input id='resposta5' name='resposta5' type='resposta5' style= "display:none">
 		<label id="DragOp2">No disponible en swipe</label>
       </p>
 	 </div>
 	 <div class="subform" id="Filtre"style= "display:none">
 	
-	  <label>URL de la imatge: </label>
+	  <label>URL de la imagen: </label>
 	 <input type="url" name="url" id="url"></input>
 		
 	 </div>
@@ -102,16 +110,15 @@
 	 </div>
 	 <div class="subform" id="End">
 		<p>
-		<label>En cas de que creguis que hi ha una resposta correcta:</label>
+		<label>Respuesta correcta:</label>
 		<input id='corr' name='corr' type='corr'>
 		</p>
 		
 		<div id='success'></div>
-		<button class="button" type="reset" id="delete" style="margin-right:100px">Esborrar</button>
+		<button class="button" type="reset" id="delete" style="margin-right:100px">Reset</button>
         <button class="button" type='submit' id="submit">Enviar</button>
 	 </div>
 	</div>
-
 	</form>
 	</div>
 </body>	
