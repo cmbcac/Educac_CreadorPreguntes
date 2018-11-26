@@ -1,5 +1,7 @@
 function showrespostes(tipus) {
 			
+			//Variables
+			{
 			var op1= document.getElementById("resposta1");
 			var op2= document.getElementById("resposta2");
 			var op3= document.getElementById("resposta3");
@@ -9,6 +11,7 @@ function showrespostes(tipus) {
 			var lab5=document.getElementById("DragOp2");
 			var cat1=document.getElementById("cat1");
 			var op1=document.getElementById("resposta1");
+			}
 			
 		 let selectedValue = tipus.options[tipus.selectedIndex].value;
 		 let subForms = document.getElementsByClassName('subform')
@@ -86,6 +89,21 @@ function showrespostes(tipus) {
 			}
 		
 	}	
+
+function showtform(tipus){
+
+	 let selectedValue = tipus.options[tipus.selectedIndex].value;
+	 if(selectedValue == "Fotos"){
+	 
+		document.getElementById("infoFoto").setAttribute("style","display:inline");
+	 
+	 }else{
+	 
+		document.getElementById("infoFoto").setAttribute("style","display:none");
+	 
+	 }
+
+}
 	
 function openWin(value) {
     window.open(value);

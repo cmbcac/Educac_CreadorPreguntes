@@ -66,7 +66,7 @@
 	background-image: url("img/bg.png");
 	background-position:center;
 	position:absolute;
-	top: calc(10vh);
+	top: calc(5vh);
 	left: calc(35vw);
 	background-color:white;
 	padding: 50px 15px 30px;
@@ -110,28 +110,3 @@
 	padding: 10px 0px 20px;
 	}
  
-	 .btn-group button {
-		background-color:  transparent;
-		border: 1px solid black; 
-		color: black; 
-		padding: 10px 24px; 
-		cursor: pointer; 
-		width: 100%; 
-		display: block; 
-		font-family: EDfont;
-		border-radius: 5px;
-	}
-
-	.btn-group button:not(:last-child) {
-		border-bottom: none;
-	}
-
-	.btn-group button:hover {
-		background-color: #3e8e41;
-	}
-	
-	#btongrup{
-	background-color: transparent;
-	width:200px;
-	float:left;
-	}
