@@ -1,0 +1,117 @@
+@font-face {
+	font-family: "EDfont";
+	src: url('Capsuula.ttf');
+}
+#title{	
+	position: absolute;
+	top:0%;
+	width: 100vw;
+	height: 5vh;
+	padding:1.19vw;
+	text-align:center;
+	line-height:5vh;
+	font-size:200%;
+	background-color: rgba(0,0,255,0.1);
+	color:black;
+	font-family: Verdana, Geneva, sans-serif	
+}
+.button {	
+	font-size: 1.19vw;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: black;
+	background-color: #c1d7d7;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 9px #999;
+	margin-bottom: 0.59vw;
+	font-family: EDfont;
+}
+#submit:hover{
+	background-color: #ccffcc
+}
+#delete:hover{
+	background-color: #ff4d4d
+}
+#submit:active{
+	background-color: #66ff66;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+#delete:active{
+	background-color: #ff3333;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+body {
+	background: transparent;
+	-webkit-animation: bgcolor 5s; 
+	animation: bgcolor 12s;
+	animation-iteration-count: infinite;
+	overflow: hidden;
+	position: fixed;
+	padding: 0;
+	margin: 0;
+}
+@-webkit-keyframes bgcolor {
+	0%   {background: #b3e6ff;}
+	16%  {background: #b3ffcc;}
+	32%  {background: #ffecb3;}
+	48%  {background: #ffb3b3;}
+	64%  {background: #ffb3ff;}
+	80%  {background: #b3b3ff;}		
+	100% {background: #b3e6ff;}
+}
+ @keyframes bgcolor {
+	0%   {background: #b3e6ff;}
+	16%  {background: #b3ffcc;}
+	32%  {background: #ffecb3;}
+	48%  {background: #ffb3b3;}
+	64%  {background: #ffb3ff;}
+	80%  {background: #b3b3ff;}		
+	100% {background: #b3e6ff;}
+ }
+.formcontainer{
+background-image: url("img/bg.png");
+background-position:center;
+position:absolute;
+top: calc(10vh);
+left: calc(35vw);
+background-color:white;
+padding: 50px 15px 30px;
+border-radius: 0.59vw;
+}
+form{
+	width: 29.76vw;
+	background-color: white;
+	padding:1.19vw 0px 1.19vw;
+	text-align:center;
+	border-radius:0.59vw;
+	resize: vertical;
+}
+label{
+	margin:0.59vw;
+	font-family: EDfont;
+}
+div{
+	position:relative;
+	background-color: white;
+	float:left;
+	width: 29.76vw;
+	text-align:center;
+}
+#formtext{
+	border-radius:0.59vw;
+}
+#Opcions{
+	border-radius:0.59vw 0.59vw 0px 0px;
+}
+#End{
+	border-radius:0px 0px 0.59vw 0.59vw;
+	padding: 0.59vw 0px 0.59vw;
+}
+#Filtre{
+	border-radius:0.59vw 0.59vw 0px 0px;
+	padding: 0.59vw 0px 1.19vw;
+}
