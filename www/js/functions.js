@@ -85,21 +85,17 @@ function showtform(tipus){
 		document.getElementById("infoFoto").setAttribute("style","display:inline");
 		var x = document.getElementById("selecttipus");
 		if(x.length==7){
-			x.remove(4);
-			x.remove(4);
-			x.remove(4);
+			x.remove(5);
+			x.remove(5);
+
 		}
 	}else{
 		document.getElementById("infoFoto").setAttribute("style","display:none");
 		var x = document.getElementById("selecttipus");
-		if(x.length==4){
+		if(x.length==5){
 			var y = document.createElement("option");
 				y.text = "Filtre";
 				y.value= "Filtre";
-			x.add(y);
-			var y = document.createElement("option");
-				y.text = "Opcion multiple";
-				y.value= "Opció múltiple";
 			x.add(y);
 			var y = document.createElement("option");
 				y.text = "Ordenar";
