@@ -1,3 +1,26 @@
+//	INSTRUCCIONES DE MODIFICACION:
+/*
+	AL HABER MODIFICADO CUALQUIER ELEMENTO DEL DOCUMENTO
+	"index.html", SE TIENEN QUE LLEVAR A CABO LAS SIGUIENTES
+	MODIFICACIONES:
+	
+	1. EN EL CASO DE HABER MODIFICADO CUALQUIER ELEMENTO DE TIPO
+	   --id="respostaX"-- se tienen que cambiar todos los apartados
+	   --document.getElementById("respostaX")-- que contengan el nombre
+	   anterior al modificado
+	2. EN EL CASO DE HABER MODIFICADO CUALQUIER ELEMENTO DE TIPO
+	   --id="catX"-- se tienen que cambiar todos los apartados
+	   --document.getElementById("catX")-- que contengan el nombre
+	   anterior al modificado
+	   
+	!!!		AVISO	  !!!
+	TODOS LOS NOMBRES DE LOS APARTADOS MENCIONADOS TIENEN QUE SER -EXACTAMENTE-
+	IGUALES EN LOS SIGUIENTES FICHEROS/LUGARES:
+		1. index.html
+		2. supermain.js ( en la aplicacion de los cuestionarios )
+		3. TODOS los spreadsheet de google
+*/
+
 function showrespostes(tipus){
 	//Variables
 	{
@@ -44,7 +67,7 @@ function showrespostes(tipus){
 			op4.required=true;
 			op5.required=true; 
 		} 
-		else if(selectedValue=="Filtre"){
+		else if(selectedValue=="Filtre" || selectedValue == "Youtube"){
 			subForms[0].setAttribute('style', 'display:none')
 			subForms[1].setAttribute('style', 'display:inline')
 			subForms[2].setAttribute('style', 'display:none')
@@ -84,7 +107,8 @@ function showtform(tipus){
 	if(selectedValue == "Fotos"){
 		document.getElementById("infoFoto").setAttribute("style","display:inline");
 		var x = document.getElementById("selecttipus");
-		if(x.length==7){
+		if(x.length==8){
+			x.remove(5);
 			x.remove(5);
 			x.remove(5);
 
@@ -101,6 +125,10 @@ function showtform(tipus){
 				y.text = "Ordenar";
 				y.value= "Ordenar";
 			x.add(y);
+			var z = document.createElement("option");
+				z.text = "Youtube";
+				z.value= "Youtube";
+			x.add(z);
 		}
 	}
  }
