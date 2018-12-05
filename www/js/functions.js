@@ -90,6 +90,18 @@ function showrespostes(tipus){
 			lab5.setAttribute('style', 'display:none')
 			cat1.required=false;
 		}
+		else if(selectedValue == "RespuestaLibre"){
+			subForms[0].setAttribute('style', 'display:none')
+			subForms[1].setAttribute('style', 'display:none')
+			subForms[2].setAttribute('style', 'display:none')
+			subForms[3].setAttribute('style', 'display:block')
+			op4.setAttribute('style', 'display:none')
+			op5.setAttribute('style', 'display:none')
+			lab4.setAttribute('style', 'display:none')
+			lab5.setAttribute('style', 'display:none')
+			cat1.required=false;
+			op1.required=false;
+		}
 		else {
 			subForms[0].setAttribute('style', 'display:none')
 			subForms[1].setAttribute('style', 'display:none')
@@ -107,7 +119,8 @@ function showtform(tipus){
 	if(selectedValue == "Fotos"){
 		document.getElementById("infoFoto").setAttribute("style","display:inline");
 		var x = document.getElementById("selecttipus");
-		if(x.length==8){
+		if(x.length==9){
+			x.remove(5);
 			x.remove(5);
 			x.remove(5);
 			x.remove(5);
@@ -129,6 +142,10 @@ function showtform(tipus){
 				z.text = "Youtube";
 				z.value= "Youtube";
 			x.add(z);
+			var w = document.createElement("option");
+				w.text = "Respuesta Libre";
+				w.value= "RespuestaLibre";
+			x.add(w);
 		}
 	}
  }
