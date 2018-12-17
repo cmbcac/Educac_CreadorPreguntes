@@ -101,6 +101,17 @@ function showrespostes(tipus){
 			lab5.setAttribute('style', 'display:none')
 			cat1.required=false;
 			op1.required=false;
+		}else if(selectedValue == "Buscador"){
+			subForms[0].setAttribute('style', 'display:none')
+			subForms[1].setAttribute('style', 'display:none')
+			subForms[2].setAttribute('style', 'display:none')
+			subForms[3].setAttribute('style', 'display:block')
+			op4.setAttribute('style', 'display:none')
+			op5.setAttribute('style', 'display:none')
+			lab4.setAttribute('style', 'display:none')
+			lab5.setAttribute('style', 'display:none')
+			cat1.required=false;
+			op1.required=false;
 		}
 		else {
 			subForms[0].setAttribute('style', 'display:none')
